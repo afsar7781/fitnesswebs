@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+:root{
+    --orange:#ff9f1a;
+}
+
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    outline: none;
+    text-decoration: none;
+}
+
+
+.header{
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(img/slider3.jpg)no-repeat;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+
+
+.head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left: 0;
+    z-index: 1000;
+    padding:2rem 3rem;
+}
+
+.head .logo{
+    font-size: 3rem;
+    color:#fff;
+}
+
+.head.logo span{
+    color:var(--orange);
+}
+
+.head .navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head .navbar ul li{
+    margin:0 1rem;
+}
+
+.head .navbar ul li a{
+    color:#fff;
+    font-size: 2rem;
+}
+
+.head .navbar ul li a.active,
+.head .navbar ul li a:hover{
+    color:var(--orange);
+}
+
+.head #menu{
+    font-size: 3rem;
+    color:var(--orange);
+    cursor: pointer;
+    display: none;
+}
+
+.head.header-active{
+    background:#fff;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+}
+
+.head.header-active .logo,
+.head.header-active .navbar a{
+    color:#333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*::selection{
+    background:var(--orange);
+    color:#fff;
+}
+
+
+.btn:hover::before{
+    clip-path: circle(100%);
+}
+
+.btn:hover{
+    color:#fff;
+}
+
+.heading{
+    display: inline-block;
+    color:#333;
+    margin:2rem 0;
+    padding:1rem 0;
+    padding-top: 8rem;
+    font-size: 3rem;
+    border-bottom: .2rem solid var(--orange);
+}
+
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+.btn{
+    cursor: pointer;
+    border:.2rem solid var(--orange);
+    color:var(--orange);
+    background:none;
+    padding:.5rem 3rem;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 0;
+    font-size: 2rem;
+}
+
+
+.plan{
+    min-height: 100vh;
+    text-align: center;
+    background:#eee;
+}
+
+.plan .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plan .box-container .box{
+    background:#fff;
+    margin:2rem;
+    width:30rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+
+.plan .box-container .box:hover{
+    transform: scale(1.04);
+}
+
+.plan .box-container .box .title{
+    font-size: 2.5rem;
+    background:var(--orange);
+    color:#fff;
+    padding:1rem 0;
+}
+
+.plan .box-container .box .price{
+    font-size: 4rem;
+    color:#333;
+    padding-top:1rem;
+}
+
+.plan .box-container .box .price span{
+    font-size: 2rem;
+}
+
+.plan .box-container .box .month{
+    font-size: 2rem;
+    color:#666;
+}
+
+.plan .box-container .box ul{
+    margin:2rem 8rem;
+    list-style: none;
+}
+
+.plan .box-container .box ul li{
+    text-align: left;
+    padding:.5rem 0;
+    font-size: 1.5rem;
+    color:#333;
+}
+
+.plan .box-container .box ul li i{
+    color:var(--orange);
+    padding:0 .5rem;
+}
+
+.plan .box-container .box .btn{
+    margin-bottom: 3rem;
+}
